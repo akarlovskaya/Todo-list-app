@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Poiret+One|Tinos" rel="stylesheet"> 
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="left_side">
+      <h1>My Todo List</h1>
+      
+      <div>
+        <input id="addTodoTextInput" type="text" placeholder = "Enter your todo here">
+        <button onclick="handlers.addTodo()">Add</button>
+        <!-- dynamically insert elements in DOM using JS -->
+        <ul class="todoList_wrapper"></ul>
+      </div>
+    </div>  
+
+    <div class="right_side">
+      <div>
+        <h2>Mark as completed</h2>
+        <input id="toggleTodoPositionInput" type="number" placeholder = "Choose a todo number">
+        <button onclick="handlers.toggleCompleted()">Submit</button>
+        
+      </div>
+      
+      <div>
+        <h2>Change status for all</h2>
+        <button onclick="handlers.toggleAll()">Toggle</button>
+      </div>
+      
+      <div>
+        <h2>Change todo</h2>
+        <input id="changeTodoPositionInput" type="number" placeholder = "Choose a todo number"><br>
+        <input id="changeTodoTextInput" type="text" placeholder = "Enter a new todo's name"><br>
+        <button onclick="handlers.changeTodo()" class="change_button">Submit</button>
+
+      </div>
+    </div>
+  </div>  
+  
+  <script src="script.js"></script>
+</body>
+
+</html>

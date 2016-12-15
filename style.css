@@ -1,0 +1,118 @@
+body {
+    background-color: #222;
+}
+
+.wrapper {
+	margin-top: 50px;
+}
+
+.left_side {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.right_side {
+	border-top: 1px solid #F7F0E9;
+	padding: 20px;
+}
+
+h1, h2 {
+  font-family: 'Poiret One', cursive;
+  color: #F7F0E9;
+  letter-spacing: 1px;
+  margin-top: 20px;
+} 
+h2 {
+	margin-top: 35px;
+}
+
+ul {
+	background-color: #F7F0E9;
+	width: 80%;
+	min-height: 100px; 
+	margin: 10px auto;
+	padding: 20px 0 0;
+}
+
+li {
+	font-family: 'Tinos', serif;
+	font-size: 20px;
+	list-style: none;
+	margin: 10px auto;
+	
+}
+
+li:last-child {
+	padding-bottom: 30px;
+}
+
+
+li button {
+	margin: 10px 0 10px 10px;
+
+}
+
+button {
+	background-color: #DF5333;
+	color: #F7F0E9;
+	width: 110px;
+	height: 30px;
+	border: transparent;
+	border-radius: 5px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	font-size: 14px;
+}
+
+button:hover {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	cursor: pointer;
+	background-color: #e36a4f;
+}
+
+input {
+	height: 10px;
+	width: 180px;
+	border: transparent;
+	padding: 10px;
+	font-size: 14px;
+	
+}
+
+#changeTodoPositionInput,
+#changeTodoTextInput,
+.change_button {
+	margin: 10px 0 0;
+}
+
+
+@media only screen and (min-width: 500px) {
+	.wrapper {
+		max-width: 900px;
+		margin: 100px auto 0;
+	}
+
+	ul {
+		width: 80%;
+	}
+} /* end @media min-width: 500px */
+
+
+@media only screen and (min-width: 800px) {
+	.wrapper {
+		display: -webkit-flex;
+    	display: flex;
+	}
+
+	.right_side {
+		border-left: 1px solid #F7F0E9;
+		border-top: 0;
+	}
+
+	ul {
+		width: 100%;
+	}
+} /* end @media min-width: 800px */
+
+
+
